@@ -16,6 +16,7 @@
     public class Global : HttpApplication
     {
         #region Global Constants
+
         public static readonly TsigNucleo Nucleo = new TsigNucleo(Conexion: "SIGOB", LeerConfiguracionWeb: true); // Núcleo global del sistema
         public static readonly CultureInfo Cultura = new CultureInfo(WebConfigurationManager.AppSettings["cultura"]); // cultura (localización) del sistema, que será usada para formatear fechas en el sistema
         public static readonly string TituloPrincipal = WebConfigurationManager.AppSettings["titulo"]; // etiqueta principal para mostrar en el sistema

@@ -90,7 +90,7 @@
         }
 
         /// <summary>
-        /// 
+        /// Modelo de objeto para correo electrónico
         /// </summary>
         public struct EmailModel
         {
@@ -193,9 +193,9 @@
                 AsuntoEmail = hash["ASUNTO_MAIL"];
             }
         }
-        
+
         /// <summary>
-        /// Método para envío de los e-mails, usa la información de 
+        /// Método para envío de los e-mails, usa la información del objeto correo
         /// </summary>
         /// <param name="correo">Información del correo electrónico</param>
         /// <param name="contexto">Contexto activo de SIGOB</param>
@@ -236,6 +236,58 @@
                     client.Authenticate(parametros.Username, parametros.Password);
                     //Envío asincrónicamente
                     await client.SendAsync(message);
+                    client.Disconnect(true);
+                }
+            }
+            catch (Exception ex)
+            {
+                TsigNucleo.EscribirLog($"No fue posible notificar por e-mail. Mensaje:{ex.Message}");
+                return;
+            }
+        }
+
+        /// <summary>
+        /// Método para envío de los e-mails, usa la información del objeto correo
+        /// </summary>
+        /// <param name="correo">Información del correo electrónico</param>
+        /// <param name="contexto">Contexto activo de SIGOB</param>
+        public static void Send(EmailModel correo, TsigContexto contexto)
+        {
+            try
+            {
+                //1. Obtengo la configuración
+                var parametros = new ConfiguracionServicio(contexto).Email;
+
+                //2. Creo el menasaje
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress(Encoding.UTF8, parametros.Remitente, parametros.DireccionEmail));
+                foreach (string destinatario in correo.To.Split(',').ToList())
+                {
+                    message.To.Add(new MailboxAddress(Encoding.UTF8, $"Mail: {destinatario}", destinatario));
+                }
+                message.Subject = correo.Subject;
+                // Construcción del Mensaje del correo
+                var html = new StringBuilder();
+                html.Append("<div><p>");
+                html.AppendFormat(correo.Content);
+                html.AppendLine("</p></div></br>");
+                html.Append($"<span>{correo.NameSender ?? parametros.Remitente}</span>");
+                message.Body = new TextPart(MimeKit.Text.TextFormat.Html)
+                {
+                    Text = html.ToString()
+                };
+
+                //Instancia el cliente de correo y envía
+                using (var client = new SmtpClient())
+                {
+                    // For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+                    client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                    client.Connect(parametros.ServidorSMTP, parametros.Puerto, parametros.UsarSSL); //Obtener desde configuración de Despachos de SIGOB
+                    client.Timeout = 120000;
+                    // Establece las credenciales de inicio de sesión de la cuenta.
+                    client.Authenticate(parametros.Username, parametros.Password);
+                    //Envío asincrónicamente
+                    client.SendAsync(message);
                     client.Disconnect(true);
                 }
             }
