@@ -1,4 +1,4 @@
-﻿namespace FormulariosMupa.App_Code
+﻿namespace FormulariosMupa.Comun
 {
     using System;
     using System.Data;
@@ -27,7 +27,7 @@
         /// <summary>
         /// Procedimientos Almacenados utilizados para consulta
         /// </summary>
-        public enum TSigCorrespondenceProcedures : int
+        public enum TSigProcedures : int
         {
             SvconObtenerMenuServicios = 0,
             SvconObtenerDetallesLlamadaFormulario = 1,
@@ -164,7 +164,7 @@
         public string GenerateNewTicket(TsigContexto contexto)
         {
             string strGuid = String.Empty;
-            var procedimiento = contexto.BaseDatos.StoredProc(procedimiento: TSigCorrespondenceProcedures.RepGenerarTicket.ToString());           //MLHIDE
+            var procedimiento = contexto.BaseDatos.StoredProc(procedimiento: TSigProcedures.RepGenerarTicket.ToString());           //MLHIDE
             procedimiento.AgregarParametro("PARAMETROS", UniDbType.VarChar).Value = GetParamTicket();
             procedimiento.AgregarParametro("PARAMETROS_INSTRUMENTO", UniDbType.VarChar).Value = GetParamInstrumentoTicket();
             procedimiento.AgregarParametro("TICKET", UniDbType.Guid, ParameterDirection.Output);

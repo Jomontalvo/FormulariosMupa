@@ -1,0 +1,157 @@
+﻿#wrapper .header {
+    background-color: transparent;
+    padding: 0px 0;
+    margin-bottom: 0px;
+}
+
+    #wrapper .header .RadMenu {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+#wrapper .logo {
+    margin: 10px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+    #wrapper .logo img {
+        max-width: 100%;
+    }
+
+#wrapper .jumbotron {
+    margin-bottom: 20px;
+    padding: 0 1.875em 1.875em 1.875em;
+    border: 1px solid transparent;
+    background-color: #e9eaea;
+    overflow: hidden;
+}
+
+    #wrapper .jumbotron img {
+        float: right;
+        margin: 20px 0 0 0;
+        max-width: 100%;
+    }
+
+    #wrapper .jumbotron h1 {
+        border-bottom: 1px solid #767676;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+
+#wrapper .grid_wrapper {
+    margin: 0 40px;
+}
+
+#wrapper .footer {
+    padding: 20px 15px;
+    line-height: 30px;
+    background-color: #f5f5f5
+}
+
+#wrapper .ComboBox {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#wrapper .CampoTexto {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.RadComboBox_Bootstrap .LabelObjeto.rcbLabel {
+    font-family: Verdana,Helvetica,Arial;
+    width: 100px;
+}
+
+html .RadUpload .ruFakeInput {
+    width: 0px;
+    visibility: hidden;
+}
+
+.usa-alert {
+    background-color: #f1f1f1;
+    background-position: 1rem 2rem;
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    margin-top: 0.5em;
+    padding: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    .usa-alert {
+        background-size: 5.2rem;
+    }
+}
+
+.usa-alert ul {
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+.usa-alert-icon {
+    display: table-cell;
+    padding-right: 1rem;
+}
+
+.usa-alert-body {
+    display: table-cell;
+    padding-left: 3.5rem;
+    vertical-align: top;
+}
+
+@media screen and (min-width: 600px) {
+    .usa-alert-body {
+        padding-left: 5rem;
+    }
+}
+
+.usa-alert-heading {
+    margin-bottom: .3rem;
+    margin-top: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .usa-alert-heading {
+        margin-top: .3rem;
+    }
+}
+
+.usa-alert-text {
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.usa-alert-success {
+    background-color: #e7f4e4;
+    background-image: url("imagenes/alerts/success.png");
+    background-image: url("imagenes/alerts/success.svg");
+}
+
+.usa-alert-warning {
+    background-color: #fff1d2;
+    background-image: url("imagenes/alerts/warning.png");
+    background-image: url("imagenes/alerts/warning.svg");
+}
+
+.usa-alert-error {
+    background-color: #f9dede;
+    background-image: url("imagenes/alerts/error.png");
+    background-image: url("imagenes/alerts/error.svg");
+}
+
+.usa-alert-info {
+    background-color: #e1f3f8;
+    background-image: url("imagenes/alerts/info.png");
+    background-image: url("imagenes/alerts/info.svg");
+}
+
+.usa-alert-info-small {
+    background-color: #e1f3f8;
+}
+
+.usa-alert-no_icon {
+    background-image: none;
+}
