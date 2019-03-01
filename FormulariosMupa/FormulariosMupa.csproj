@@ -122,42 +122,49 @@
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Web.Spreadsheet">
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Telerik.Web.UI, Version=2019.1.115.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+    <Reference Include="Telerik.Web.Spreadsheet, Version=2019.1.215.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\Telerik.Web.UI.dll</HintPath>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Web.UI.Skins, Version=2019.1.115.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+    <Reference Include="Telerik.Web.UI, Version=2019.1.215.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\Telerik.Web.UI.Skins.dll</HintPath>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\Telerik.Web.UI.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Core, Version=2019.1.114.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2019.1.215.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\Telerik.Web.UI.Skins.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2019.1.114.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Fixed.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2019.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Flow, Version=2019.1.114.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2019.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Fixed.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2019.1.114.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2019.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2019.1.114.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2019.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Windows.Zip, Version=2019.1.114.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
-      <HintPath>..\lib\RCAJAX\2019.1.115.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2019.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2019.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2019.1.215.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease">
@@ -463,7 +470,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
